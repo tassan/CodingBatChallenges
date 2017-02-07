@@ -4,14 +4,7 @@
 
 
 def near_hundred(n):
-    if n <= 100:
-        if n >= abs(10 - 100):
-            return True
-        return False
-    if n >= 100:
-        if n >= abs(10 - 200):
-            return True
-        return False
+    return (abs(100 - n) <= 10) or (abs(200 - n) <= 10)
 
 
-print(near_hundred(89))
+print(near_hundred(211))
